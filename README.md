@@ -11,3 +11,5 @@ fourth step opened style.css file and made it's style
 fivth step opened app.js and careate a constructor for employee
 
 sixth step create a method to calculate a random number between min and max salary range depending on the employee level
+
+Live url : https://jafer-aldakhily.github.io/management-system/
