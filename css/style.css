@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color:black;
+    display: flex;
+    justify-content: center;
+}
+
+
+header #header-menu{
+    list-style: none;
+    padding: 1%;
+    display: flex;
+    gap: 10%;
+}
+
+
+header #header-menu li > a{
+    text-decoration: none;
+    color: white;
+    transition: all 1s;
+}
+
+header #header-menu li > a:hover{
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: wheat;
+}
+
+main{
+    height: 500px;
+}
+
+
+footer{
+    background-color:black;
+    display: flex;
+    justify-content: center;
+}
+
+footer #social-accounts{
+    list-style: none;
+    padding: 1%;
+    display: flex;
+    gap: 10%;
+}
+
+footer #social-accounts li > a{
+    text-decoration: none;
+    color: white;
+    transition: all 1s;
+}
+
+footer #social-accounts li > a:hover{
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: wheat;
+}
+
+
+
