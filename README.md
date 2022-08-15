@@ -12,4 +12,7 @@ fivth step opened app.js and careate a constructor for employee
 
 sixth step create a method to calculate a random number between min and max salary range depending on the employee level
 
+day task I create a render function which creating a row table for each time a create a instance from object and
+called a render function, basically it is a dynamic data row depending on user object (instance)
+
 Live url : https://jafer-aldakhily.github.io/management-system/

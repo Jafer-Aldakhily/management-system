@@ -30,9 +30,25 @@ header #header-menu li > a:hover{
     color: wheat;
 }
 
-main{
+#main{
     height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#main > table {
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(odd) {background-color: #f2f2f2;}
+
 
 
 footer{
