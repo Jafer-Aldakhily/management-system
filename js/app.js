@@ -65,12 +65,12 @@ table.prepend(thead)
 
 
 
-let emp1 = new Employee(1000,"Ghazi smarra","Administration","Senior","https://picsum.photos/200/300")
-render(emp1.employeeId,emp1.employeeFullName,emp1.employeeDepartment,emp1.employeelevel, emp1.salary())
-let emp2 = new Employee(1001,"Lana Ali","Finance","Senior","https://picsum.photos/200")
-render(emp2.employeeId,emp2.employeeFullName,emp2.employeeDepartment,emp2.employeelevel, emp2.salary())
-let emp3 = new Employee(1002,"Tmara Ayoub","Marketing","Senior","https://picsum.photos/id/237/200/300")
-render(emp3.employeeId,emp3.employeeFullName,emp3.employeeDepartment,emp3.employeelevel, emp3.salary())
+// let emp1 = new Employee(1000,"Ghazi smarra","Administration","Senior","https://picsum.photos/200/300")
+// render(emp1.employeeId,emp1.employeeFullName,emp1.employeeDepartment,emp1.employeelevel, emp1.salary())
+// let emp2 = new Employee(1001,"Lana Ali","Finance","Senior","https://picsum.photos/200")
+// render(emp2.employeeId,emp2.employeeFullName,emp2.employeeDepartment,emp2.employeelevel, emp2.salary())
+// let emp3 = new Employee(1002,"Tmara Ayoub","Marketing","Senior","https://picsum.photos/id/237/200/300")
+// render(emp3.employeeId,emp3.employeeFullName,emp3.employeeDepartment,emp3.employeelevel, emp3.salary())
 // let emp4 = new Employee(1003,"Safi Walid","Administration","Mid-Senior","https://picsum.photos/seed/picsum/200/300")
 // render(emp4.employeeId,emp4.employeeFullName,emp4.employeeDepartment,emp4.employeelevel, emp4.salary())
 // let emp5 = new Employee(1004,"Omar Zaid","Development","Senior","https://picsum.photos/200/300?grayscale")
@@ -130,17 +130,25 @@ imgUrl.value = ""
 
 
 
-
-
 function render(...rows)
 {
 const tr = document.createElement("tr")
-
+const persons = []
 for (const row of rows) {
 const td = document.createElement("td")
 td.textContent = row
 tr.append(td)
+persons.push(row)
 }
 table.append(tr)
 
+setLocalStorage(persons)
+}
+
+var count = 0;
+function setLocalStorage (...persons){
+    for (let i = 0; i < persons.length; i++) {
+        localStorage.setItem(`persons ${count}`,JSON.stringify(persons))
+        count ++;
+    }
 }
