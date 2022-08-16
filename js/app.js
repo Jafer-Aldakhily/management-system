@@ -71,30 +71,30 @@ let emp2 = new Employee(1001,"Lana Ali","Finance","Senior","https://picsum.photo
 render(emp2.employeeId,emp2.employeeFullName,emp2.employeeDepartment,emp2.employeelevel, emp2.salary())
 let emp3 = new Employee(1002,"Tmara Ayoub","Marketing","Senior","https://picsum.photos/id/237/200/300")
 render(emp3.employeeId,emp3.employeeFullName,emp3.employeeDepartment,emp3.employeelevel, emp3.salary())
-let emp4 = new Employee(1003,"Safi Walid","Administration","Mid-Senior","https://picsum.photos/seed/picsum/200/300")
-render(emp4.employeeId,emp4.employeeFullName,emp4.employeeDepartment,emp4.employeelevel, emp4.salary())
-let emp5 = new Employee(1004,"Omar Zaid","Development","Senior","https://picsum.photos/200/300?grayscale")
-render(emp5.employeeId,emp5.employeeFullName,emp5.employeeDepartment,emp5.employeelevel, emp5.salary())
-let emp6 = new Employee(1005,"Rana Saleh","Development","Junior","https://picsum.photos/200/300/?blur")
-render(emp6.employeeId,emp6.employeeFullName,emp6.employeeDepartment,emp6.employeelevel, emp6.salary())
-let emp7 = new Employee(1006,"Hadi Ahmad","Finance","Mid-Senior","https://picsum.photos/200/300/?blur=2")
-render(emp7.employeeId,emp7.employeeFullName,emp7.employeeDepartment,emp7.employeelevel, emp7.salary())
+// let emp4 = new Employee(1003,"Safi Walid","Administration","Mid-Senior","https://picsum.photos/seed/picsum/200/300")
+// render(emp4.employeeId,emp4.employeeFullName,emp4.employeeDepartment,emp4.employeelevel, emp4.salary())
+// let emp5 = new Employee(1004,"Omar Zaid","Development","Senior","https://picsum.photos/200/300?grayscale")
+// render(emp5.employeeId,emp5.employeeFullName,emp5.employeeDepartment,emp5.employeelevel, emp5.salary())
+// let emp6 = new Employee(1005,"Rana Saleh","Development","Junior","https://picsum.photos/200/300/?blur")
+// render(emp6.employeeId,emp6.employeeFullName,emp6.employeeDepartment,emp6.employeelevel, emp6.salary())
+// let emp7 = new Employee(1006,"Hadi Ahmad","Finance","Mid-Senior","https://picsum.photos/200/300/?blur=2")
+// render(emp7.employeeId,emp7.employeeFullName,emp7.employeeDepartment,emp7.employeelevel, emp7.salary())
 
 // consoled results
-console.log(emp1);
-console.log(emp2);
-console.log(emp3);
-console.log(emp4);
-console.log(emp5);
-console.log(emp6);
-console.log(emp7);
-console.log(emp1.salary());
-console.log(emp2.salary());
-console.log(emp3.salary());
-console.log(emp4.salary());
-console.log(emp5.salary());
-console.log(emp6.salary());
-console.log(emp7.salary());
+// console.log(emp1);
+// console.log(emp2);
+// console.log(emp3);
+// console.log(emp4);
+// console.log(emp5);
+// console.log(emp6);
+// console.log(emp7);
+// console.log(emp1.salary());
+// console.log(emp2.salary());
+// console.log(emp3.salary());
+// console.log(emp4.salary());
+// console.log(emp5.salary());
+// console.log(emp6.salary());
+// console.log(emp7.salary());
 
 
 
