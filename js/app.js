@@ -33,7 +33,7 @@ const table = document.createElement("table")
 table.setAttribute("border",1 + "px")
 
 // Prepending table inside the main tag 
-main.prepend(table)
+main.append(table)
 
 // Creting a thead tag
 const thead = document.createElement("thead")
@@ -98,6 +98,33 @@ console.log(emp7.salary());
 
 
 
+
+// Event code
+
+// Submited button
+const submit = document.getElementById("submit")
+
+// accessing on inputs
+const id = document.getElementById("emp_id")
+const full_name = document.getElementById("full_name")
+const imgUrl = document.getElementById("img_url")
+
+// accessing on selects
+const department = document.getElementById("departments")
+const level = document.getElementById("levels")
+
+
+submit.addEventListener("click", (e) => {
+e.preventDefault()
+
+const emp = new Employee(id.value,full_name.value,department.value,level.value,imgUrl.value)
+render(id.value,full_name.value,department.value,level.value,emp.salary())
+id.value = ""
+full_name.value = ""
+department.value = department[0].value
+level.value = level[0].value
+imgUrl.value = ""
+})
 
 
 

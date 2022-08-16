@@ -35,7 +35,12 @@ header #header-menu li > a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 6%;
 }
+
+
+/* ******************************* Table Design ******************************* */
 
 #main > table {
     border-collapse: collapse;
@@ -48,6 +53,23 @@ header #header-menu li > a:hover{
   }
   
   tr:nth-child(odd) {background-color: #f2f2f2;}
+
+/* ******************************* Table Design ******************************* */
+
+/* ******************************* Form Design ******************************* */
+
+
+
+#form-section form input,select{
+    width: 50%;
+    margin-top: 1%;
+}
+
+
+
+/* ******************************* Form Design ******************************* */
+
+
 
 
 
